@@ -88,19 +88,19 @@ function LatestEarthquake() {
     <View style={Styles.detailGempa}>
       <View style={Styles.flexRow}>
         <View style={Styles.descWrapper}>
-          <Icon name="clock-outline" size={23} color="#2b6079" />
+          <Icon name="clock-outline" size={23} color="#ecf0f1" />
           <Text style={Styles.title}>{dataGempa?.Tanggal?._text}</Text>
           <Text style={Styles.desc}>{dataGempa?.Jam?._text}</Text>
         </View>
         <View style={Styles.separator} />
         <View style={Styles.descWrapper}>
-          <Icon name="access-point" size={23} color="#2b6079" />
+          <Icon name="access-point" size={23} color="#ecf0f1" />
           <Text style={Styles.title}>{dataGempa?.Magnitude?._text}</Text>
           <Text style={Styles.desc}>Magnitudo</Text>
         </View>
         <View style={Styles.separator} />
         <View style={Styles.descWrapper}>
-          <Icon name="adjust" size={23} color="#2b6079" />
+          <Icon name="adjust" size={23} color="#ecf0f1" />
           <Text style={Styles.title}>{dataGempa?.Kedalaman?._text}</Text>
           <Text style={Styles.desc}>Kedalaman</Text>
         </View>
@@ -113,7 +113,7 @@ function LatestEarthquake() {
             <Icon
               name="map-marker-radius"
               size={23}
-              color="#2b6079"
+              color="#ecf0f1"
               style={Styles.icon}
             />
             <Text style={[Styles.descText]}>
@@ -121,7 +121,7 @@ function LatestEarthquake() {
             </Text>
           </View>
           <View style={[Styles.eqLocationData, Styles.right]}>
-            <Icon name="crosshairs-gps" size={23} color="#2b6079" />
+            <Icon name="crosshairs-gps" size={23} color="#ecf0f1" />
             <Text style={Styles.descText}>
               {dataGempa?.Lintang?._text}-{dataGempa?.Bujur?._text}
             </Text>
@@ -156,7 +156,7 @@ const Styles = StyleSheet.create({
     left: 0,
     right: 0,
     height: 180,
-    backgroundColor: 'rgba(255,255,255,.9)',
+    backgroundColor: 'rgba(17, 22, 31, 0.9)',
   },
   flexRow: {
     flexDirection: 'row',
@@ -174,11 +174,11 @@ const Styles = StyleSheet.create({
     fontSize: 16,
     fontFamily: 'GoogleSans-Medium',
     paddingTop: 5,
-    color: '#2b6079',
+    color: '#ecf0f1',
   },
   desc: {
     fontSize: 13,
-    color: 'grey',
+    color: '#bdc3c7',
     fontFamily: 'GoogleSans-Regular',
     paddingTop: 5,
   },
@@ -197,7 +197,7 @@ const Styles = StyleSheet.create({
     fontSize: 13,
     paddingTop: 8,
     paddingLeft: 20,
-    color: 'grey',
+    color: '#bdc3c7',
     fontFamily: 'GoogleSans-Regular',
   },
   eqLocationWrapper: {
@@ -213,7 +213,7 @@ const Styles = StyleSheet.create({
     paddingTop: 5,
     paddingLeft: 5,
     fontFamily: 'GoogleSans-Regular',
-    color: 'grey',
+    color: '#bdc3c7',
     paddingRight: 10,
   },
   icon: {
@@ -224,7 +224,7 @@ const Styles = StyleSheet.create({
     paddingLeft: 10,
   },
   credit: {
-    backgroundColor: 'rgba(255,255,255,0.5)',
+    backgroundColor: 'rgba(0,0,0,0.5)',
     position: 'absolute',
     top: 0,
     right: 0,
@@ -235,6 +235,6 @@ const Styles = StyleSheet.create({
     paddingRight: 10,
     paddingLeft: 5,
     fontFamily: 'GoogleSans-Regular',
-    color: 'grey',
+    color: '#bdc3c7',
   },
 });

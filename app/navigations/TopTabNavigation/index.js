@@ -23,14 +23,14 @@ function EarthquakeFelt() {
 }
 
 const tabBarOptions = {
-  activeTintColor: '#4bcffa',
-  inactiveTintColor: '#2b6079',
+  activeTintColor: '#FFF',
   labelStyle: {
     fontFamily: 'GoogleSans-Medium',
     textTransform: 'capitalize',
     fontSize: 15,
   },
   indicatorStyle: { backgroundColor: '#4bcffa' },
+  style: { backgroundColor: '#1B232E' },
 };
 
 function TopTab() {

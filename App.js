@@ -8,7 +8,7 @@ import { RootNavigation } from './app/navigations/RootNavigation/';
 const App = () => {
   return (
     <NavigationContainer>
-      <StatusBar barStyle="dark-content" backgroundColor="#fff" />
+      <StatusBar barStyle="light-content" backgroundColor="#1B232E" />
       <RootNavigation />
     </NavigationContainer>
   );

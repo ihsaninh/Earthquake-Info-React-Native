@@ -10,10 +10,10 @@ const MyHeader = () => {
           name="chevron-left"
           size={28}
           style={Styles.backIcon}
-          color="#2b6079"
+          color="#fff"
         />
         <Text style={Styles.headerTitle}>Gempa Bumi</Text>
-        <Icon name="share-variant" size={22} color="#2b6079" />
+        <Icon name="share-variant" size={22} color="#fff" />
       </View>
     </View>
   );
@@ -25,7 +25,7 @@ const Styles = StyleSheet.create({
   headerContainer: {
     height: 50,
     flex: 0,
-    backgroundColor: '#FFFFFF',
+    backgroundColor: '#1B232E',
     paddingHorizontal: 15,
     justifyContent: 'center',
   },
@@ -36,7 +36,7 @@ const Styles = StyleSheet.create({
   headerTitle: {
     fontSize: 20,
     fontFamily: 'GoogleSans-Bold',
-    color: '#2b6079',
+    color: '#fff',
   },
   backIcon: {
     marginTop: -4,
